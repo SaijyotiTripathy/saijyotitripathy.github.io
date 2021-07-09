@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<style type="text/css">
+
+body {
+	font-family: Arial;
+	font-size: 20px;
+}
+
+.container1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+  
+</style>
+		
+		
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>  
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+						<li class="nav__item"><a href="#interests" class="nav__link">Interests</a></li>
+		                <li class="nav__item"><a target="_blank" href="SaijyotiResume.pdf">Resume</a>
+						
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi I am <span class="home__title-color"><div id="container"></h1>
+					    <h1 class="home__title-color"><div id="text"></div></h1>
+                    </div></span></h1>	
+                    									
+<script type="text/javascript">
+// List of sentences
+var _CONTENT = [ "Saijyoti Tripathy","Learner", "Data Science Enthusiast", "Artificial Intelligence Enthusiast" ];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Implements typing effect
+function Type() { 
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If last sentence then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+
+</script>				
+</div>                    
+					<div class="home__social">
+                    <a href="https://www.linkedin.com/in/saijyoti-tripathy/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/SaijyotiTripathy" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="girl.jpg" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about">
+                        <img src="codergirl2.jpg" alt="">
+                    </div>
+                    
+                        <div>
+                        <h2 class="about__subtitle">I am Saijyoti</h2>
+                        <p class="about__text"> Goal oriented, persistant, determined and focused computer science student with a keen eye for details.
+						Curious of learning the dynamics between machine and human with an understanding of data science, machine learning and 
+						artificial intelligence.</p>           
+                        </div>
+						
+				</div>	
+            </section>	
+            
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills-<br><br>Build your skills, not resume</h2>
+				<div class="skills__container bd-grid">
+                    <div>
+                        <h3 class="interests__subtitle">C Programming</h3>
+						<h3 class="interests__subtitle">Python</h3>
+						<h3 class="interests__subtitle">Mathematics</h3>
+						<h3 class="interests__subtitle">Statistics</h3>
+						<h3 class="interests__subtitle">HTML</h3>
+						<h3 class="interests__subtitle">CSS</h3> 
+						<h3 class="interests__subtitle">MS Excel</h3>
+                    </div>                                   
+                </div>
+				
+				
+
+
+            <!--===== PROJECTS =====-->
+            <section class="projects section" id="projects">
+                <h2 class="section-title">Projects-<br><br>Ah ! Learning is boring, Implementation is the real fun</h2>
+				
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="workml.png" alt="">
+						Sentimental Analysis on National Education Policy 2020 (SANEP2020)
+
+                    </div>
+                    <div class="work__img">
+                        <img src="work3.jpg" alt="">
+						Web Portfolio using HTML, CSS, JavaScript
+                    </div>
+                </div>
+			</section>
+
+			
+			<!--===== INTERESTS =====-->
+			<section class="interests section " id="interests">
+                <h2 class="section-title">Interests</h2>
+
+                <div class="interests__container bd-grid">
+                    <div>
+						<h3 class="interests__subtitle">Foreign Languages</h3>
+						<h3 class="interests__subtitle">Neural Network</h3>
+						<h3 class="interests__subtitle">Competitive Coding</h3>
+						<h3 class="interests__subtitle">Reading non-academic books</h3>
+                    </div>                                   
+                </div>
+            </section>
+			
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Saijyoti Tripathy</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/saijyoti-tripathy/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/SaijyotiTripathy" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+    </body>
+</html>
