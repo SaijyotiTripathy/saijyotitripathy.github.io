@@ -52,11 +52,17 @@
 html{
   scroll-behavior: smooth;
 }
-body{
-  margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  color: var(--second-color);
+body.active {
+  --text-color: #fff;
+  --bg-color: #0f0c27;
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+*::selection {
+  color: var(--bg-color);
+  background: var(--first-color);
 }
 h1,h2,p{
   margin: 0;
@@ -116,7 +122,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--bg-color); 
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
@@ -165,6 +171,10 @@ img{
 .nav__toggle{
   color: var(--second-color);
   font-size: 1.5rem;
+  cursor: pointer;
+}
+#darkmode {
+  font-size: 22px;
   cursor: pointer;
 }
 
@@ -217,6 +227,11 @@ img{
   right: 0;
   bottom: 0;
   width: 295px;
+}
+#darkmode {
+  position: absolute;
+  top: 1.4rem;
+  right: 2rem;
 }
 
 /*BUTTONS*/
@@ -376,7 +391,7 @@ img{
     display: none;
   }
   .nav__link{
-    color: var(--second-color);
+    color: var(--text-color);
   }
 
   .home{
