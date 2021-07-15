@@ -303,21 +303,6 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-.skills__html{
-  width: 0%;
-}
-.skills__css{
-  width: 0%;
-}
-.skills__js{
-  width: 0%;
-}
-.skills__ux{
-  width: 0%;
-}
-.skills__img{
-  border-radius: .5rem;
-}
 
 /* ===== WORK =====*/
 .work__container{
