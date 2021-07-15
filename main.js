@@ -29,10 +29,13 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 let darkmode = document.querySelector('#darkmode');
 
 darkmode.onclick = () => {
-    if(darkmode.classList.contains('bx-moon')){
+    if(darkmode.classList.contains('bx-moon'))
+    {
         darkmode.classList.replace('bx-moon','bx-sun');
         document.body.classList.add('active');
-    }else{
+    }
+    else
+    {
         darkmode.classList.replace('bx-sun','bx-moon');
         document.body.classList.remove('active');
     }
