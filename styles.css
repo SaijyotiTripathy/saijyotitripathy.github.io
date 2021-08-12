@@ -321,6 +321,45 @@ img{
   transform: scale(1.1);
 }
 
+/* ===== ACADEMICS =====*/
+.academics__tabs{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: var(--mb-2);
+}
+.academics__data{
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	column-gap: 2.5rem;
+}
+.academics__title{
+	font-size: var(--large-font-size);
+	font-weight: var(--font-semi);
+}
+.academics__subtitle{
+	display: inline-block;
+	font-size: var(--small-font-size);
+	margin-bottom: var(--mb-1);
+}
+.academics__calender{
+	font-size: var(--smaller-font-size);
+	color: var(--text-color-light);
+}
+.academics__rounder{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-color: var(--first-color);
+	border-radius: 50%;
+}	
+.academics__line{
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color: var(--first-color);
+	transform: translate(6px, -7px);
+}
+
 
 
 /* ===== FOOTER =====*/
