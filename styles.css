@@ -305,14 +305,10 @@ img{
 }
 
 /* ===== PROJECTS =====*/
-.projects__container
-{
-	position: relative;
-	width: 1280px;
+.projects__tabs{
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	margin-bottom: var(--mb-2);
 }
 .projects__container .cards
 {
